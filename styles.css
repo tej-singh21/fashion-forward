@@ -122,71 +122,12 @@
     font-weight: bold;
     font-size: 1em;
   }
-  /* rating */
-  .rating {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    color: #f0c14b; /* Gold color for stars */
-  }
-  
-  .rating .star {
-    margin-right: 2px;
-  }
-  
-  .rating .half {
-    position: relative;
-    display: inline-block;
-    color: #f0c14b;
-    overflow: hidden;
-  }
-  
-  .rating .half::before {
-    content: "★";
-    color: #ddd; /* Light gray for the empty portion */
-    position: absolute;
-    left: 0;
-    width: 50%;
-    overflow: hidden;
-  }
-  
-  .rating-text {
-    margin-left: 5px;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-
-
-  /* .product-item button:hover {
-    background-color: #ff5733;
-  } */
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-  }
-  /* Basic Reset */
-  .product-block {
-    min-width: 300px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 10px;
-    flex-shrink: 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+ 
 /* Hover Effect for Entire Product Block */
 .product-block:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
-  
-  /* Photo Block */
   
   /* Photo Block */
   .photo-block {
@@ -199,11 +140,6 @@
     margin-bottom: 10px;
     transition: transform 0.3s ease;
   }
-  
-  /* .photo-block img:hover {
-    transform: scale(1.05);
-  } */
-  
   .photo-block p {
     font-size: 0.9rem;
     transition: color 0.3s ease;
@@ -211,6 +147,31 @@
   
   .photo-block p:hover {
     color: #ff5733;
+  }
+.photo-block {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .photo-block img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    border-radius: 8px; 
+    border: 1px solid #ddd;
+    margin: 0 auto; 
+    display: block; 
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-block p {
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    margin-top: 5px;
+  }
+  
+  .photo-block p:hover {
+    color: #ff5733; 
   }
   
   /* Individual Product Items */
@@ -239,11 +200,6 @@
     font-size: 0.9rem;
     margin: 5px 0;
   }
-  
-  /* .product-item p:hover {
-    color: #ff5733;
-  } */
-
   /* Pagination */
  .pagination {
     margin: 22px ;
@@ -275,34 +231,16 @@
     background-color: #333;
     color: #fff;
   }
-/* Photo Block */
-.photo-block {
-    text-align: center;
-    margin-bottom: 10px;
+  /* Basic Reset */
+  .product-block {
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
-  .photo-block img {
-    width: 100%; /* Adjusts the width to fit the container */
-    max-width: 250px; /* Restricts the maximum width */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 8px; /* Adds rounded corners */
-    border: 1px solid #ddd; /* Adds a light border */
-    margin: 0 auto; /* Centers the image horizontally */
-    display: block; /* Ensures proper alignment */
-    transition: transform 0.3s ease;
-  }
-/*   
-  .photo-block img:hover {
-    transform: scale(1.05); 
-  } */
-  
-  .photo-block p {
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-    margin-top: 5px;
-  }
-  
-  .photo-block p:hover {
-    color: #ff5733; /* Highlight effect on hover */
-  }
+
       
